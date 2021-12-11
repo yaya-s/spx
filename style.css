@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'raleway', sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background: #020412;
+    color: white;
+    padding: 0 8.5%;
+    position: relative;
+}
+nav {
+    padding: 30px 0 10px ;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex: wrap;
+}
+.logo {
+    width: 40px;
+    cursor: pointer;
+    animation: mdown 2s linear 1;
+    
+}
+@keyframes mdown {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.list-menu {
+    width: 35px;
+    cursor: pointer;
+}
+.navigasi {
+    animation: movedown 1s linear 1;
+}
+
+@keyframes movedown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 40px;
+}
+
+nav ul li a{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 500;
+}
+nav ul li{
+    justify-content: space-between;
+    display: inline-block;
+    margin: 10px 30px;
+    transition: 0.5s easy;
+}
+nav ul li a:hover {
+    color: gold;
+}
+.text-box {
+    margin-top: 15%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+.text-box h1 {
+    font-size: 90px;
+    line-height: 160px;
+}
+.text-box span {
+    color: gold;
+}
+.text-box a {
+    margin-top: 20px;
+    color: #fff;
+    border: 1px solid gold;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    line-height: 20px;
+}
+/* #fff724 */
+.text-box .btn {
+    background: gold;
+    color: #020412;
+    font-weight: 600;
+    margin-left: 16px;
+}
+.img{
+    position: absolute;
+    width: 470px;
+    right: 9%;
+    top: 80px;
+    bottom: 0;
+    animation: right- 1.5s linear 1;
+    opacity: 1;
+}
+@keyframes right- {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*----midle--*/
+.middle {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+}
+.middle h1 a{
+    font-size: 40px;
+    color: #020412;
+}
+.middle p {
+    padding: 10px;
+    line-height:30px;
+}
+.middle h3 {
+    margin-top: 15px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.row-1 {
+    margin-bottom: 5%;
+    flex-basis: 30%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 5px;
+    border: 1px solid #cdcdce;
+}
+.row-1:hover {
+    box-shadow: 0 0 20px 0px rgb(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.picture {
+    position: absolute;
+    width: 25%;
+    left: 15%;
+    margin-bottom: 0;
+    animation: piv- 6s linear 1;
+}
+@keyframes piv- {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img-row {
+    position: absolute;
+    width: 30px;
+    bottom: 40px;
+    left: 135px;
+    animation: mymove 4s infinite;
+    cursor: pointer;
+}
+.row-scroll {
+    position: relative;
+    margin-top: 20px;
+}
+@keyframes mymove {
+    0%   {top: 10px;}
+    25%  {top: 40px;}
+    50%  {top: 40px}
+    75% {top: 40px;}
+    100% {top: 20px;}
+  }
+
+
+.scroll {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 130px;
+}
+.Footer {
+    text-align: left;
+    padding: 30px 0;
+    margin-left: 150px;
+    position: relative;
+}
+.Footer h4 {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 40px;
+}
+.icon .fab {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 20px;
+}
+
+.Footer-end {
+    text-align: left;
+    padding: 30px 0;
+    margin-left: 40%;
+}
+.Footer-end h4 {
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 40px;
+}
+.contactt {
+    position: absolute;
+    width: 26%;
+    right: 13%;
+    top: 0;
+    animation: pic- 5s linear 1;
+}
+@keyframes pic- {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.akhir {
+    font-size: 12px;
+    color:rgb(126, 125, 125);
+}
+.background {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    background-size: cover;
+}
