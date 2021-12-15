@@ -259,3 +259,87 @@ nav ul li a:hover {
     z-index: -2;
     background-size: cover;
 }
+
+
+@media (max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+    .text-box h1 {
+        font-size: 23px;
+    }
+    .img {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+    .text-box .btn {
+        font-size: 11px;
+        padding: 5;
+    }
+    .text-box p {
+        font-size: 10px;
+        padding-top: 35px;
+    }
+    nav ul li a{
+        font-size: 9px;
+        margin: 0;
+    }
+    nav ul li{
+        display: inline-block;
+        font-size: 10px;
+        margin-right: -20px;
+    }
+    .logo {
+        width: 25px;
+        margin: 0;
+    }
+    .middle h1 a{
+        font-size: 30px;
+    }
+    .middle p {
+        font-size: 14px;
+    }
+    .img-row {
+        padding-top: 20px;
+    }
+    .scroll {
+        margin-top: 10px;
+        margin-left: 133px;
+    }
+    .contactt {
+        margin: 0;
+        width: 240px;
+        position: relative;
+        left: 13%;
+    }
+    .picture {
+        margin: 0;
+        width: 240px;
+        position: relative;
+        left: 10%;
+    }
+    .Footer p {
+        font-size: 12px;
+    }
+    .Footer-end p {
+        font-size: 13px;
+    }
+    .Footer-end {
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .Footer {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .Footer-end .akhir {
+        margin: auto;
+        text-align: center;
+    }
+    .background {
+        margin: 0;
+        bottom: 20%;
+    }
+}
